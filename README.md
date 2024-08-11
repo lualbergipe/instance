@@ -1,46 +1,31 @@
-# Getting Started with Create React App
+# Instance app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Características
 
-In the project directory, you can run:
+- La aplicación contiene dos rutas principales home y ordenes, se escribes otra ruta diferente a estas dos el sistema te redirecciona a la pagina 404
+- Topbar que muestra el nombre del usuario que agregamos desde el home del sitio construido con la libreria react bootstrap, este nombre de usuario funciona como un dropdown que si lo desplegamos nos muestra la opcion de cerrar sesión para borrar los datos del contexto.
+- Sidebar donde tenemos el menu principal del sitio, construido con css
+- En la ruta Home tenemos un resumen de ventas, este componente contiene datos quemados y es un componente estilizado desde su propio archivo css, ademas de contener un formulario con un campo para ingresar el nombre de usuario que al tener datos almacenados desaparece y muestra el nombre en el Topbar, esto gracias al contexto de react que estamos utilizando, el contexto contiene dos funciones (login y logout) ademas de dos variables una auth y otra username que almacenan un booleano y el nombre del usuario que agregamos desde el input del home. Ademas tenemos un hook personalizado llamado useUser que lo usamos para acceder a los datos del contexto, de esta manera persistimos los datos en las paginas del sitio.
+- el la pagina orders tenemos una tabla que nos muestra la data que consumimos desde la api proporcionada, tenemos un loader que se muestra cuando estamos cargando la data y los filtros que se requieren uno para filtrar los numeros de orden y un dropdown para filtrar por el canal de venta, ademas se hace una funcion llamada chanelFilter para generar una lista donde filtramos  los canales de ventas y quitamos los valores duplicados y la renderizamos en el dropdown de esta manera esta lista es dinamica, finalmente la tabla que mjuestra los datos de las ordenes tienen un boton de detalla que despliega una ventana modal mostrando la información completa de cada orden  
 
-### `npm start`
+## Tecnologías y librerias Utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- React
+- typescript
+- Bootstrap para React
+- React icons
+- react-router-dom
+- formik
+- Yup
 
-### `npm test`
+## Instalación
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Proporcione un paso a paso para configurar el entorno de desarrollo local:
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+git clone https://github.com/lualbergipe/instance
+cd repositorio
+npm install
+npm start

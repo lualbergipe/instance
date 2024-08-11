@@ -41,8 +41,8 @@ const Filters = ({inputValue, handleInputChange, filterData, cleanFilter, data}:
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
-                    {channels.map((channel:string) => (
-                        <Dropdown.Item key={channel} onClick={() => filterData(channel, 'channel')}>
+                    {channels.map((channel:string, index) => (
+                        <Dropdown.Item key={index} onClick={() => filterData(channel, 'channel')}>
                             {channel}
                         </Dropdown.Item>
                     ))}

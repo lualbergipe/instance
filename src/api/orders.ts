@@ -1,6 +1,6 @@
 import { URL_API, API_KEY, TOKEN } from "../utils/constants";
-
 export async function getCategoriesApi() {
+  
   try {
     const url = `${URL_API}`;
     const params = {
