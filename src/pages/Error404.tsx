@@ -1,10 +1,13 @@
 import React from 'react'
+import NotFound from '../components/NotFound/NotFound'
+import { Container } from 'react-bootstrap'
 
 export const Error = () => {
   return (
-    <div>
-      <h2>Error 404</h2>
-    </div>
+    <Container>
+      <NotFound/>
+    </Container>
+  
   )
 }
 
