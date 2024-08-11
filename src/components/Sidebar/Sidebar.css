@@ -1,0 +1,74 @@
+.sidebar{
+  position: fixed; 
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 56px;
+  height: 100vh;
+  background-color: #4F2CD4;
+  transition: width 0.4s;  
+}
+.sidebar.open{
+  width: 260px;
+}
+.sidebar .inner{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 260px;
+}
+.sidebar header{
+  display: flex;
+  align-items: center;
+height: 64px;
+padding: 0 6px;
+background: #371e97;  
+}
+.sidebar-burger{
+  width: 44px;
+  height: 72px;
+  display: grid;
+  place-items: center;
+  color: #f9f9f9;
+  background-color: transparent;
+  border: none;
+}
+.sidebar header > img {
+  height: 28px;
+}
+nav{
+  display: grid;
+  padding: 6px;
+  gap: 2px;
+}
+.sidebar nav > a{
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  align-content: center;
+  height: 44px;
+  width: 44px;
+  font-size: 16px;
+  line-height: 1;
+  padding: 0 12px;
+  border-radius: 8px;
+  color: #f9f9f9;
+  background-color: transparent;
+  border: none;
+}
+.sidebar nav > a:hover{
+  background: rgb(0 0 0 / 30%);
+  color: #f9f9f9;
+}
+.sidebar header > img,
+.sidebar nav > a p{
+  opacity: 0;
+  transition: 0.3s;
+  margin: 0;
+}
+.sidebar.open :is(nav a p, header > img){
+  opacity: 1;
+}
+.sidebar.open nav > a{
+  width: 100%;
+}

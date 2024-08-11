@@ -1,0 +1,10 @@
+.bar-inactive {
+    transition: margin-left 0.3s ease; /* Añade una transición suave */
+    margin-left: 56px; /* Establece el margen izquierdo a 0 */
+    padding: 20px;
+  }
+  .bar-active {
+    transition: margin-left 0.3s ease; /* Añade una transición suave */
+    margin-left: 260px; /* Ajusta según el ancho de tu sidebar */
+    padding: 20px;
+  }

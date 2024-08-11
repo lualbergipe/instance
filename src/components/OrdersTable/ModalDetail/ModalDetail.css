@@ -1,0 +1,8 @@
+.modal-title {
+    text-align: center;
+    width: 100%;
+}
+.table__container {
+    overflow-x: auto; 
+    margin: 15px 0; 
+}
