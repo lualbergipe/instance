@@ -48,7 +48,11 @@ const OrdersTable = ({ data, itemsPerPage = 10 }:SimpleTableProps) => {
     const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
         const { value } = event.target;
         setInputValue(value);        
-        filterData(value, 'order');
+        if (value.trim() === "") {
+            cleanFilter();  
+        } else {
+            filterData(value, 'order');
+        }
     };
     const cleanFilter = () => {
         setInputValue('')
