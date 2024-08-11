@@ -1,7 +1,7 @@
 import React from 'react';
 import './ModalDetail.css';
 import { Modal, Button, Table } from 'react-bootstrap';
-import { OrderData, Product } from '../../../types/types';
+import { OrderData } from '../../../types/types';
 
 interface ModalDetailProps {
   show: boolean;
