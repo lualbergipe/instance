@@ -1,5 +1,5 @@
 import {useEffect, useState} from 'react'
-import { getCategoriesApi } from '../api/orders'
+import { getOrdersApi } from '../api/orders'
 import OrdersTable from '../components/OrdersTable/OrdersTable'
 import { OrderData } from '../types/types'
 import Loader from '../components/Loader/Loader'
@@ -9,8 +9,7 @@ export const Orders = () => {
 ordenes()
   }, [])
   const ordenes  = async () => {
-    const orders = await getCategoriesApi()
-    console.log(orders.message.orders, '========');
+    const orders = await getOrdersApi()
     setOrderApi(orders.message.orders)
   }
   return (
