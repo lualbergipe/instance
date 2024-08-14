@@ -26,9 +26,9 @@ Proporcione un paso a paso para configurar el entorno de desarrollo local:
 
 ##  Nota importante: Antes de ejecutar el proyecto se debe crear un fichero en la raiz del proyecto con el nombre .env y agregar las variables de esta manera:
 
-REACT_APP_URL_BASE=URL_API \n
-REACT_APP_API_KEY=API_KEY \n
-REACT_APP_TOKEN=TOKEN \n
+REACT_APP_URL_BASE=URL_API<br />
+REACT_APP_API_KEY=API_KEY<br />
+REACT_APP_TOKEN=TOKEN<br />
 
 ```bash
 git clone https://github.com/lualbergipe/instance
